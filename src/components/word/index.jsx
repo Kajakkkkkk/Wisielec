@@ -1,6 +1,8 @@
 import React from "react";
 
-const Word = ({ selectedWord, guessedLetters }) => {
+const Word = (props) => {
+  const { selectedWord, guessedLetters } = props;
+
   return (
     <div>
       {selectedWord.split("").map((letter, index) => (
